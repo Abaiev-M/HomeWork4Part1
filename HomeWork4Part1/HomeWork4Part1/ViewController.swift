@@ -9,14 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var myButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textLabel.text = "Hello, World!"
+        textLabel.text = "Hello, junior ios developer!"
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTap(_ sender: UIButton) {
+        textLabel.text = "Hello, senior ios developer!"
+    }
+    
 }
 
